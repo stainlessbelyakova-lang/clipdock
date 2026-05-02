@@ -1,0 +1,38 @@
+[
+    {
+        "id": "bb6d2098-454b-4e9a-a9b7-9b3bd81136ea",
+        "text": "iconutil -c icns assets/icon.iconset",
+        "created_at": "2026-04-26 21:42",
+        "pinned": false
+    },
+    {
+        "id": "f15dbe2a-9ae1-4aa4-8494-6f16278b5ecd",
+        "text": "cp assets/icon.png assets/icon.iconset/icon_512x512@2x.png",
+        "created_at": "2026-04-26 21:42",
+        "pinned": false
+    },
+    {
+        "id": "7654aeca-863a-48b3-9ca4-13c6912ce9ef",
+        "text": "sips -z 512 512 assets/icon.png --out assets/icon.iconset/icon_512x512.png",
+        "created_at": "2026-04-26 21:42",
+        "pinned": false
+    },
+    {
+        "id": "e81b3252-c864-4283-ab45-7742e0a07d7c",
+        "text": "mkdir -p assets/icon.iconset",
+        "created_at": "2026-04-26 21:42",
+        "pinned": false
+    },
+    {
+        "id": "e4c71535-3174-4802-97b8-5f0f6f0f68c2",
+        "text": "pyinstaller \\\n  --windowed \\\n  --name ClipDock \\\n  --icon assets/icon.icns \\\n  --add-data \"data:data\" \\\n  main.py",
+        "created_at": "2026-04-26 21:40",
+        "pinned": false
+    },
+    {
+        "id": "0d30d379-33e5-422f-a094-05587c42215b",
+        "text": "mkdir -p assets/icon.iconset\nsips -z 512 512 assets/icon.png --out assets/icon.iconset/icon_512x512.png\ncp assets/icon.png assets/icon.iconset/icon_512x512@2x.png\niconutil -c icns assets/icon.iconset\nmv assets/icon.icns assets/\nrm -rf assets/icon.iconset",
+        "created_at": "2026-04-26 21:39",
+        "pinned": false
+    }
+]
